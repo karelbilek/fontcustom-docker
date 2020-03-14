@@ -15,4 +15,6 @@ I tried to make the docker as minimal as possible by removing all dev packages, 
 
 Usage:
 
-`docker run -v ${PWD}:/project karel3d/fontcustom compile -n iconname -h ./vectors/ -c config.yml`
+`docker run --user="$(id -u):$(id -g)" -v ${PWD}:/project karel3d/fontcustom compile -n iconname -h ./vectors/ -c config.yml`
+
+TIP: use together with https://github.com/karel-3d/center-svg-docker for centering SVGs
