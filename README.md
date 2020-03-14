@@ -11,7 +11,7 @@ The existing ones:
 * https://hub.docker.com/r/loremipsum/fontcustom/
 * https://hub.docker.com/r/thomaswelton/fontcustom/
 
-The docker doesn't do anything smart.
+I tried to make the docker as minimal as possible by removing all dev packages, but cannot get it under 150 MB because of fontforge.
 
 Usage:
 
